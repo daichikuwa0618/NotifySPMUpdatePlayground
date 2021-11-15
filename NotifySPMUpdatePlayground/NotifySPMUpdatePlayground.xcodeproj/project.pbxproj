@@ -11,6 +11,7 @@
 		C9DD85FF2743275A00EF86D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD85FE2743275A00EF86D0 /* ContentView.swift */; };
 		C9DD86012743275B00EF86D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9DD86002743275B00EF86D0 /* Assets.xcassets */; };
 		C9DD86042743275B00EF86D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C9DD86032743275B00EF86D0 /* Preview Assets.xcassets */; };
+		C9DD860C27432A0900EF86D0 /* Rswift in Frameworks */ = {isa = PBXBuildFile; productRef = C9DD860B27432A0900EF86D0 /* Rswift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DD860C27432A0900EF86D0 /* Rswift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = NotifySPMUpdatePlayground;
+			packageProductDependencies = (
+				C9DD860B27432A0900EF86D0 /* Rswift */,
+			);
 			productName = NotifySPMUpdatePlayground;
 			productReference = C9DD85F92743275A00EF86D0 /* NotifySPMUpdatePlayground.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = C9DD85F02743275A00EF86D0;
+			packageReferences = (
+				C9DD860A27432A0900EF86D0 /* XCRemoteSwiftPackageReference "R.swift" */,
+			);
 			productRefGroup = C9DD85FA2743275A00EF86D0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C9DD860A27432A0900EF86D0 /* XCRemoteSwiftPackageReference "R.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mac-cain13/R.swift.Library";
+			requirement = {
+				kind = exactVersion;
+				version = 5.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C9DD860B27432A0900EF86D0 /* Rswift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C9DD860A27432A0900EF86D0 /* XCRemoteSwiftPackageReference "R.swift" */;
+			productName = Rswift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C9DD85F12743275A00EF86D0 /* Project object */;
 }
