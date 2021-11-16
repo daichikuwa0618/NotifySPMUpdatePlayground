@@ -79,6 +79,7 @@
 				C9DD85F52743275A00EF86D0 /* Sources */,
 				C9DD85F62743275A00EF86D0 /* Frameworks */,
 				C9DD85F72743275A00EF86D0 /* Resources */,
+				C9F4C723274333BE0084A886 /* swift-outdated */,
 			);
 			buildRules = (
 			);
@@ -139,6 +140,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C9F4C723274333BE0084A886 /* swift-outdated */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "swift-outdated";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if mint list | grep -q 'swift-outdated'; then\n  mint run outdated\nelse\n  echo 'warning: swift-outdated not installed.'\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C9DD85F52743275A00EF86D0 /* Sources */ = {
