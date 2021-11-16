@@ -1,2 +1,3 @@
 # NotifySPMUpdatePlayground
-Swift Package Manager ライブラリの Update を検知する実験リポジトリ
+
+Playground repository which experiments outdated notification of libraries via SPM.
